@@ -165,23 +165,21 @@ public class BoardLetterTypedListener implements KeyListener {
                 return;
             }
         }
-        else{
-            if (direction == KeyEvent.VK_RIGHT){
-                if (col == parent.board.getDimension()-1) parent.menuBar.requestFocusInWindow();
-                else parent.virtualBoard.get((row*parent.board.getDimension())+col+1).requestFocusInWindow();
-            }
-            else if (direction == KeyEvent.VK_LEFT){
-                if (col == 0) parent.menuBar.requestFocusInWindow();
-                else parent.virtualBoard.get((row*parent.board.getDimension())+col-1).requestFocusInWindow();
-            }
-            else if (direction == KeyEvent.VK_UP){
-                if (row == 0) parent.menuBar.requestFocusInWindow();
-                else parent.virtualBoard.get(((row-1)*parent.board.getDimension())+col).requestFocusInWindow();
-            }
-            else if (direction == KeyEvent.VK_DOWN){
-                if (row == parent.board.getDimension()-1) parent.menuBar.requestFocusInWindow();
-                else parent.virtualBoard.get(((row+1)*parent.board.getDimension())+col).requestFocusInWindow();
-            }
+        if (direction == KeyEvent.VK_RIGHT){
+            if (col == parent.board.getDimension()-1) parent.menuBar.requestFocusInWindow();
+            else parent.virtualBoard.get((row*parent.board.getDimension())+col+1).requestFocusInWindow();
+        }
+        else if (direction == KeyEvent.VK_LEFT){
+            if (col == 0) parent.menuBar.requestFocusInWindow();
+            else parent.virtualBoard.get((row*parent.board.getDimension())+col-1).requestFocusInWindow();
+        }
+        else if (direction == KeyEvent.VK_UP){
+            if (row == 0) parent.menuBar.requestFocusInWindow();
+            else parent.virtualBoard.get(((row-1)*parent.board.getDimension())+col).requestFocusInWindow();
+        }
+        else if (direction == KeyEvent.VK_DOWN){
+            if (row == parent.board.getDimension()-1) parent.menuBar.requestFocusInWindow();
+            else parent.virtualBoard.get(((row+1)*parent.board.getDimension())+col).requestFocusInWindow();
         }
     }
 }

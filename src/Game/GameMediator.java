@@ -117,7 +117,6 @@ public class GameMediator {
      * @return The winner of the game.
      */
     private void load(Source parent, LinkedList<Player> players, Board board, Bag bag, Dictionary dictionary, int whoseTurn){
-        System.out.println("here");
         try {
             Thread.sleep(1000); // Give the board a second to reinitialize...
         }catch(InterruptedException e){}

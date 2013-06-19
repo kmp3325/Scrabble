@@ -64,6 +64,7 @@ public class BoardMouseListener implements MouseListener {
                 int col = parent.virtualBoard.indexOf(spotToPlaceLetter)%parent.board.getDimension();
                 if (row == col && row == parent.board.getDimension()/2){
                     toSet = "*";
+                    spotToPlaceLetter.setForeground(Color.BLACK);
                 }
                 if (!parent.board.getBonusAt(row, col).equals("")){
                     toSet = parent.board.getBonusAt(row, col);

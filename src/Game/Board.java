@@ -170,7 +170,6 @@ public class Board extends Observable{
                             neighbor = neighbor.replaceFirst(aboveWord.charAt(b)+"", "_");
                     }
                     for (int b=0; b<belowWord.length(); b++){ // Check below neighbor for blanks
-                        if (belowWord.equals("Y")) System.out.println((row+b+1)+" "+(i+startCol));
                         if (blanks.get(row+b+1).get(i+startCol))
                             neighbor = neighbor.replaceFirst(belowWord.charAt(b)+"", "_");
                     }
