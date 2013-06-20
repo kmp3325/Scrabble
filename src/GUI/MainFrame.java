@@ -98,7 +98,7 @@ public class MainFrame extends JFrame implements Observer, Source {
 
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         setTitle("Scrabble 2.0");
-        setBounds(new Rectangle(0, 0, 530, 530));
+        setBounds(new Rectangle(0, 0, 560, 530));
         setLocationRelativeTo(null);
         menuBar = new JMenuBar();
         fileMenu = new JMenu("File");

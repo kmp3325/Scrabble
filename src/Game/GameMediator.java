@@ -12,6 +12,7 @@ import Util.SavedPlayer;
 import Util.Source;
 
 import javax.swing.*;
+import java.awt.*;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.*;
@@ -60,7 +61,11 @@ public class GameMediator {
      */
     private void startGUIVersion(){
         try {
-            UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+//            UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+            UIManager.setLookAndFeel("com.sun.java.swing.plaf.nimbus.NimbusLookAndFeel");
+            UIManager.put("info", new Color(0, 150, 150));
+            UIManager.put("control", new Color(164,167,173));
+
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         } catch (InstantiationException e) {

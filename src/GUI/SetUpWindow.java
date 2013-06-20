@@ -120,12 +120,9 @@ public class SetUpWindow extends JFrame implements PropertyChangeListener{
                 else if (progress == 75){
                     label.setText("Readying Graphical User Interface...");
                 }
-
-                System.out.println("before try sleep");
                 try{
                     Thread.sleep(40);
                 } catch (InterruptedException e) {return null;}
-                System.out.println("Adding 1");
                 progress += 1;
                 setProgress(progress);
             }

@@ -22,7 +22,7 @@ public class SaveActionListener implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         if (parent.currentFile == null){
-            new SaveAsActionListener(parent);
+            new SaveAsActionListener(parent).actionPerformed(new ActionEvent(parent, 0, ""));
         }
         else{
             parent.saveFile(parent.currentFile);
