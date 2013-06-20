@@ -83,17 +83,14 @@ public class SetUpWindow extends JFrame implements PropertyChangeListener{
 
     private class Loader extends SwingWorker<Object, Object> {
 
+        private int progress;
+
         @Override
         protected Object doInBackground() throws Exception {
-            int progress = 0;
-            setProgress(0);
+            progress = 0;
+            setProgress(progress);
             while (progress < 100){
-                if (task.isDone()){
-                    progress = 100;
-                    setProgress(100);
-                    return null;
-                }
-                else if (progress == 4){
+                if (progress == 4){
                     label.setText("Parsing Configuration File.");
                 }
                 else if (progress == 10){
@@ -124,14 +121,19 @@ public class SetUpWindow extends JFrame implements PropertyChangeListener{
                     label.setText("Readying Graphical User Interface...");
                 }
 
+                System.out.println("before try sleep");
                 try{
                     Thread.sleep(40);
                 } catch (InterruptedException e) {return null;}
-
+                System.out.println("Adding 1");
                 progress += 1;
                 setProgress(progress);
             }
             return null;
+        }
+
+        public void cancel(){
+            progress = 100;
         }
 
 
@@ -179,6 +181,16 @@ public class SetUpWindow extends JFrame implements PropertyChangeListener{
                 new SetUpWindow(mediator);
             }
             SetUpWindow.this.dispose();
+        }
+
+        @Override
+        protected void done(){
+            try{
+                // This will catch any exceptions from doInBackground().
+                super.get();
+                loader.cancel();
+
+            } catch(Throwable t){}
         }
     }
 }
