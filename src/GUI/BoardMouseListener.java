@@ -23,7 +23,11 @@ public class BoardMouseListener implements MouseListener {
 
     @Override
     public void mouseClicked(MouseEvent e) {
-        //To change body of implemented methods use File | Settings | File Templates.
+        if (SwingUtilities.isRightMouseButton(e) && parent.mode == Mode.CHEAT){
+            JTextField spot = (JTextField)e.getSource();
+            if (spot.getForeground() == Color.BLACK && !spot.getText().equals("*")) spot.setForeground(Color.RED);
+            else if (spot.getForeground() == Color.RED) spot.setForeground(Color.BLACK);
+        }
     }
 
     @Override

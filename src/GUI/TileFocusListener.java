@@ -48,7 +48,7 @@ public class TileFocusListener implements FocusListener {
         else if(b.getText().length() == 1 && !b.getForeground().equals(Color.RED)){
             b.setForeground(Color.BLACK);
         }
-        else if (b.getText().length() == 0){
+        else if (b.getText().length() == 0 || b.getText().equals("*")){
             b.setForeground(Color.BLACK);
         }
         parent.usedBlank = false;
