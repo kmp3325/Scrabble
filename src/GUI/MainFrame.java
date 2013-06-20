@@ -96,7 +96,7 @@ public class MainFrame extends JFrame implements Observer, Source {
         usedBlank = false;
         board.addObserver(this);
 
-        setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+        setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
         setTitle("Scrabble 2.0");
         setBounds(new Rectangle(0, 0, 560, 530));
         setLocationRelativeTo(null);

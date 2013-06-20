@@ -1,1 +1,1 @@
-Test.cfg
+Scrabble.cfg

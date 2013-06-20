@@ -21,6 +21,7 @@ public class QuitActionListener implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         if (parent.confirmation("QUIT PROGRAM", "This will quit the program!")){
+            parent.dispose();
             System.exit(0);
         }
     }
