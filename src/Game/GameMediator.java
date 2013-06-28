@@ -213,7 +213,7 @@ public class GameMediator {
     public HashMap<String, Integer> getPlayerScores(){
         HashMap<String, Integer> result = new HashMap<String, Integer>();
         for (Player p : players){
-            result.put("Player "+p.getId(), p.getScore());
+            result.put("Player "+p.getId()+" ("+p.getClass().getName().substring(7)+")", p.getScore());
         }
         return result;
     }

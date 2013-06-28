@@ -12,6 +12,7 @@ public class Main {
     public static boolean console;
 
     public static void main(String[] args){
+        System.out.println(Runtime.getRuntime().totalMemory());
         GameMediator game = new GameMediator();
         if (args.length > 0) console = true;
         else console = false;

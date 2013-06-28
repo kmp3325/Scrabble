@@ -348,7 +348,8 @@ public class BestMoveMachine {
             newLetters = new HashSet<Integer>();
             newLetters.addAll(word.getNewLetters());
             first = word.getFirst();
-            blanks = word.getBlanks();
+            blanks = new ArrayList<Integer>();
+            blanks.addAll(word.getBlanks());
         }
 
         /**
@@ -392,18 +393,18 @@ public class BestMoveMachine {
          * @param blank If the string is blank
          */
         public void prepend(String str, boolean newLetter, boolean blank){
+            ArrayList<Integer> movers = new ArrayList<Integer>();
+            for (Integer i : newLetters) movers.add(i);
+            newLetters.clear();
+            for (Integer i : movers) newLetters.add(i+str.length());
             if (newLetter){
-                ArrayList<Integer> movers = new ArrayList<Integer>();
-                for (Integer i : newLetters) movers.add(i);
-                newLetters.clear();
-                for (Integer i : movers) newLetters.add(i+str.length());
                 for (int i=0; i<str.length(); i++) newLetters.add(i);
             }
+            movers.clear();
+            for (Integer i : blanks) movers.add(i);
+            blanks.clear();
+            for (Integer i : movers) blanks.add(i+str.length());
             if (blank){
-                ArrayList<Integer> movers = new ArrayList<Integer>();
-                for (Integer i : blanks) movers.add(i);
-                blanks.clear();
-                for (Integer i : movers) blanks.add(i+str.length());
                 for (int i=0; i<str.length(); i++) blanks.add(i);
             }
             first += str.length();
