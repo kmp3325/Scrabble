@@ -31,7 +31,7 @@ public class ExchangeWindow extends JDialog {
                     for (JTextField tile : parent.hand){
                         if (tile.getText().equals("")){
                             if (virtual.getForeground() == Color.RED) tile.setText("_");
-                            else virtual.setText(virtual.getText());
+                            else tile.setText(virtual.getText());
                             virtual.setForeground(Color.BLACK);
                             virtual.setText("");
                             break;

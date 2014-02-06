@@ -74,7 +74,6 @@ public abstract class Player implements Serializable {
      * @param toTrade The list of tiles to trade.
      */
     protected void trade(ArrayList<Character> toTrade){
-        System.out.println("trading");
         for (Character c : toTrade) hand.remove(c);
         for (Character ignored : toTrade) hand.add(bag.getRandomTile());
         for (Character c : toTrade) bag.add(c);
