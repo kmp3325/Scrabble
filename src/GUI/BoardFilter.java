@@ -10,7 +10,7 @@ import javax.swing.text.DocumentFilter;
  * User: keegan
  * Date: 6/18/13
  * Time: 8:46 PM
- * To change this template use File | Settings | File Templates.
+ * Sanatizes inputs.
  */
 public class BoardFilter extends DocumentFilter {
 

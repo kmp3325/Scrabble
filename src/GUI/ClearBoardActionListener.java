@@ -1,5 +1,7 @@
 package GUI;
 
+import Util.Logger;
+
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -21,6 +23,7 @@ public class ClearBoardActionListener implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         if (parent.confirmation("Clear Board", "This will completely wipe the board")){
+            Logger.log("Board was cleared.");
             parent.board.clear();
         }
     }

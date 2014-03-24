@@ -40,7 +40,7 @@ public class SaveAsActionListener implements ActionListener {
             chooser.setSelectedFile(new File("untitled.brd"));
         }
         chooser.setFileFilter(filter);
-        int returnVal = chooser.showOpenDialog(parent);
+        int returnVal = chooser.showSaveDialog(parent);
         if(returnVal == JFileChooser.APPROVE_OPTION) {
             parent.saveFile(chooser.getSelectedFile());
         }

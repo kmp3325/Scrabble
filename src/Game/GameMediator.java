@@ -8,6 +8,7 @@ import Player.TerribleComputer;
 import Player.DecentComputer;
 import Player.RandomComputer;
 import Util.Dictionary;
+import Util.Logger;
 import Util.SavedPlayer;
 import Util.Source;
 
@@ -15,6 +16,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.*;
 
 /**
@@ -28,11 +31,14 @@ public class GameMediator {
 
     public static String path = "src/";
     public static String configFile = path+"Configurations/Scrabble.cfg";
+    public static String logFileBeginning = path+"Logs/";
     private ArrayList<Player> players;
     private Player currentPlayer;
 
     public GameMediator(){
         players = new ArrayList<Player>();
+        Calendar cal = Calendar.getInstance();
+        Logger.setLogger(logFileBeginning + "log_"+cal.getTime()+".txt");
         String classpath = System.getProperty("java.class.path");
         int jarPos = classpath.indexOf("Scrabble.exe");
         if (jarPos != -1){
@@ -50,7 +56,7 @@ public class GameMediator {
     }
 
     /**
-     * Start is called and will determine if the game is console or GUI based.
+     * Start is called and will determine if the game is console or GUI based.  (Currently no console version)...
      */
     public void start(){
         startGUIVersion();
@@ -92,6 +98,7 @@ public class GameMediator {
      */
     public void play(Source parent, ArrayList<String> players, Board board, Bag bag, Dictionary dictionary){
         ArrayList<Player> newPlayers = new ArrayList<Player>();
+        System.out.println("ijwefijwefijwef");
         int i = 0;
         for (String player : players){
             i++;
@@ -179,6 +186,8 @@ public class GameMediator {
             Player newPlayer;
             if (p.type.equals("Player.ExpertComputer")) newPlayer = new ExpertComputer(p.id, board, bag, dictionary);
             else if (p.type.equals("Player.Human")) newPlayer = new Human(parent, p.id, board, bag, dictionary);
+            else if (p.type.equals("Player.DecentComputer")) newPlayer = new DecentComputer(p.id, board, bag, dictionary);
+            else if (p.type.equals("Player.RandomComputer")) newPlayer = new RandomComputer(p.id, board, bag, dictionary);
             else newPlayer = new Human(parent, p.id, board, bag, dictionary);
             newPlayer.setValues(p);
             realPlayers.add(newPlayer);

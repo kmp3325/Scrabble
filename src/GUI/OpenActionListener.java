@@ -83,7 +83,8 @@ public class OpenActionListener implements ActionListener {
                     parent.initializeBoard();
                     while (!parent.bag.isEmpty()) parent.bag.getRandomTile();
                     for (Character c : saved.baggage) parent.bag.add(c);
-                    new GamePlay(saved.players, saved.whoseTurn).execute();
+                    parent.game = new GamePlay(parent, saved.players, saved.whoseTurn);
+                    parent.game.execute();
                 }
                 else{
                     throw new IllegalConfigException();

@@ -1,5 +1,7 @@
 package GUI;
 
+import Util.Logger;
+
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -24,6 +26,7 @@ public class EndActionListener implements ActionListener {
             if (parent.game != null) parent.game.cancel(true);
             parent.game = null;
             parent.setOptionsForGame(false);
+            Logger.log("Ended current game.");
         }
     }
 }

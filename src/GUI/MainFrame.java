@@ -38,6 +38,7 @@ public class MainFrame extends JFrame implements Observer, Source {
     private JMenu editMenu;
     private JMenuItem setConfigFileItem;
     private JMenuItem setDefaultConfigItem;
+    private JMenuItem clearLogFiles;
     private JMenu viewMenu;
     private JMenuItem letterScoresItem;
     private JMenuItem dictionaryItem;
@@ -113,6 +114,7 @@ public class MainFrame extends JFrame implements Observer, Source {
         Image quitimg = null;
         Image setconfigimg = null;
         Image setdefaultconfigimg = null;
+        Image clearlogfilesimg = null;
         Image letterscoresimg = null;
         Image dictionaryimg = null;
         Image playerscoresimg = null;
@@ -126,6 +128,7 @@ public class MainFrame extends JFrame implements Observer, Source {
             quitimg = ImageIO.read(new File(GameMediator.path+"Icons/quit.png"));
             setconfigimg = ImageIO.read(new File(GameMediator.path+"Icons/setconfig.png"));
             setdefaultconfigimg = ImageIO.read(new File(GameMediator.path+"Icons/setdefaultconfig.png"));
+            clearlogfilesimg = ImageIO.read(new File(GameMediator.path+"Icons/clearlogfiles.png"));
             letterscoresimg = ImageIO.read(new File(GameMediator.path+"Icons/letterscores.png"));
             dictionaryimg = ImageIO.read(new File(GameMediator.path+"Icons/dictionary.png"));
             playerscoresimg = ImageIO.read(new File(GameMediator.path+"Icons/playerscores.png"));
@@ -151,6 +154,8 @@ public class MainFrame extends JFrame implements Observer, Source {
         else setConfigFileItem = new JMenuItem("Set Config File");
         if (setdefaultconfigimg != null) setDefaultConfigItem = new JMenuItem("Set Default Config", new ImageIcon(setdefaultconfigimg));
         else setDefaultConfigItem = new JMenuItem("Set Default Config");
+        if (clearlogfilesimg != null) clearLogFiles = new JMenuItem("Clear Log Files", new ImageIcon(clearlogfilesimg));
+        else clearLogFiles = new JMenuItem("Clear Log Files");
 
         if (letterscoresimg != null) letterScoresItem = new JMenuItem("Letter Scores", new ImageIcon(letterscoresimg));
         else letterScoresItem = new JMenuItem("Letter Scores");
@@ -192,6 +197,8 @@ public class MainFrame extends JFrame implements Observer, Source {
 
         setDefaultConfigItem.addActionListener(new SetDefaultConfigActionListener(this));
 
+        clearLogFiles.addActionListener(new ClearLogFilesActionListener(this));
+
         letterScoresItem.addActionListener(new LetterScoresActionListener(this));
 
         dictionaryItem.addActionListener(new DictionaryActionListener(this));
@@ -216,6 +223,7 @@ public class MainFrame extends JFrame implements Observer, Source {
 
         editMenu.add(setConfigFileItem);
         editMenu.add(setDefaultConfigItem);
+        editMenu.add(clearLogFiles);
 
         viewMenu.add(dictionaryItem);
         viewMenu.add(letterScoresItem);
@@ -565,6 +573,8 @@ public class MainFrame extends JFrame implements Observer, Source {
                     SavedPlayer savep = new SavedPlayer();
                     savep.hand = new ArrayList<Character>();
                     for (Character c : p.getHand().toCharArray()) savep.hand.add(c);
+                    System.out.println("hand");
+                    System.out.println(savep.hand);
                     savep.id = p.getId();
                     savep.score = p.getScore();
                     savep.type = p.getClass().getName();
@@ -573,6 +583,7 @@ public class MainFrame extends JFrame implements Observer, Source {
                 toSave.whoseTurn = mediator.getPlayers().indexOf(mediator.getCurrentPlayer());
                 toSave.baggage = new ArrayList<Character>();
                 while (!bag.isEmpty()) toSave.baggage.add(bag.getRandomTile());
+                for (char c : toSave.baggage) bag.add(c);
                 out.writeObject(toSave);
                 out.close();
             }
@@ -671,4 +682,24 @@ public class MainFrame extends JFrame implements Observer, Source {
     }
 
     protected void setMoveChoice(PlayerMove move){moveChoice = move;}
+
+    protected String getBoardString() {
+        String result = "\nOfficial Board: ";
+        for (int i=0; i<board.getDimension(); i++) {
+            for (int j=0; j< board.getDimension(); j++) {
+                result += board.get(i, j);
+            }
+            result += "\n";
+        }
+
+        result += "\n Virtual Board: ";
+        for (int i=0; i<board.getDimension(); i++) {
+            for (int j=0; j< board.getDimension(); j++) {
+                result += virtualBoard.get((i*board.getDimension())+j);
+            }
+            result += "\n";
+        }
+
+        return result;
+    }
 }

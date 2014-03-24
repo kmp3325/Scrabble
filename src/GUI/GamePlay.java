@@ -35,15 +35,21 @@ public class GamePlay extends SwingWorker<Object, Object> {
      * @param players The players that were playing
      * @param whoseTurn Whose turn it was.
      */
-    public GamePlay(ArrayList<SavedPlayer> players, int whoseTurn){
+    public GamePlay(MainFrame parent, ArrayList<SavedPlayer> players, int whoseTurn){
+
+        this.parent = parent;
         this.savedPlayers = players;
         this.whoseTurn = whoseTurn;
     }
 
     @Override
     protected Object doInBackground() throws Exception {
-        if (savedPlayers == null) parent.mediator.play(parent, players, parent.board, parent.bag, parent.dictionary);
-        else parent.mediator.load(parent, savedPlayers, parent.board, parent.bag, parent.dictionary, whoseTurn);
+        if (savedPlayers == null){
+            parent.mediator.play(parent, players, parent.board, parent.bag, parent.dictionary);
+        }
+        else{
+            parent.mediator.load(parent, savedPlayers, parent.board, parent.bag, parent.dictionary, whoseTurn);
+        }
         return null;
     }
 }
