@@ -41,6 +41,7 @@ public class GameMediator {
         Logger.setLogger(logFileBeginning + "log_"+cal.getTime()+".txt");
         String classpath = System.getProperty("java.class.path");
         int jarPos = classpath.indexOf("Scrabble.exe");
+        if (jarPos == -1) jarPos = classpath.indexOf("Scrabble.jar");
         if (jarPos != -1){
             int jarPathPos = classpath.lastIndexOf(File.pathSeparatorChar, jarPos)+1;
             path = classpath.substring(jarPathPos, jarPos);
@@ -98,7 +99,6 @@ public class GameMediator {
      */
     public void play(Source parent, ArrayList<String> players, Board board, Bag bag, Dictionary dictionary){
         ArrayList<Player> newPlayers = new ArrayList<Player>();
-        System.out.println("ijwefijwefijwef");
         int i = 0;
         for (String player : players){
             i++;

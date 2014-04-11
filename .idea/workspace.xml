@@ -6,21 +6,21 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e174e86-1980-4a5b-b895-0468b78cec1c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/GUI/ClearLogFilesActionListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Util/Logger.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Logs/db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Saves/untitled.svg" afterPath="$PROJECT_DIR$/src/Saves/untitled.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GUI/BoardFilter.java" afterPath="$PROJECT_DIR$/src/GUI/BoardFilter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GUI/ClearBoardActionListener.java" afterPath="$PROJECT_DIR$/src/GUI/ClearBoardActionListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GUI/EndActionListener.java" afterPath="$PROJECT_DIR$/src/GUI/EndActionListener.java" />
+    <list default="true" id="0e174e86-1980-4a5b-b895-0468b78cec1c" name="Default" comment="...">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Icons/clearlogfiles.png" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Logs/db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Saves/db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Saves/game1.brd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Saves/game2.brd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Saves/raelyn.brd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Saves/untitled.brd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Saves/untitled.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Saves/untitled1.svg" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Game/GameMediator.java" afterPath="$PROJECT_DIR$/src/Game/GameMediator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GUI/GamePlay.java" afterPath="$PROJECT_DIR$/src/GUI/GamePlay.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Game/Main.java" afterPath="$PROJECT_DIR$/src/Game/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Util/Logger.java" afterPath="$PROJECT_DIR$/src/Util/Logger.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GUI/MainFrame.java" afterPath="$PROJECT_DIR$/src/GUI/MainFrame.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GUI/OpenActionListener.java" afterPath="$PROJECT_DIR$/src/GUI/OpenActionListener.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GUI/PlayMoveActionListener.java" afterPath="$PROJECT_DIR$/src/GUI/PlayMoveActionListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GUI/SaveAsActionListener.java" afterPath="$PROJECT_DIR$/src/GUI/SaveAsActionListener.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Scrabble 2.0.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,13 +33,13 @@
     <file path="/Board.java" changelist="0e174e86-1980-4a5b-b895-0468b78cec1c" time="1371358483933" ignored="false" />
     <file path="/Validator.java" changelist="0e174e86-1980-4a5b-b895-0468b78cec1c" time="1371397278043" ignored="false" />
     <file path="/Dictionary.java" changelist="0e174e86-1980-4a5b-b895-0468b78cec1c" time="1370819536854" ignored="false" />
-    <file path="/Scrabble.cfg" changelist="0e174e86-1980-4a5b-b895-0468b78cec1c" time="1371081359971" ignored="false" />
-    <file path="/GameMediator.java" changelist="0e174e86-1980-4a5b-b895-0468b78cec1c" time="1395637499121" ignored="false" />
+    <file path="/Scrabble.cfg" changelist="0e174e86-1980-4a5b-b895-0468b78cec1c" time="1395793495243" ignored="false" />
+    <file path="/GameMediator.java" changelist="0e174e86-1980-4a5b-b895-0468b78cec1c" time="1397248975710" ignored="false" />
     <file path="/IllegalConfigException.java" changelist="0e174e86-1980-4a5b-b895-0468b78cec1c" time="1370398867901" ignored="false" />
     <file path="/Main.java" changelist="0e174e86-1980-4a5b-b895-0468b78cec1c" time="1395630713950" ignored="false" />
     <file path="/fragment.java" changelist="0e174e86-1980-4a5b-b895-0468b78cec1c" time="1395638488807" ignored="false" />
     <file path="/Human.java" changelist="0e174e86-1980-4a5b-b895-0468b78cec1c" time="1371613184462" ignored="false" />
-    <file path="/MainFrame.java" changelist="0e174e86-1980-4a5b-b895-0468b78cec1c" time="1395638461822" ignored="false" />
+    <file path="/MainFrame.java" changelist="0e174e86-1980-4a5b-b895-0468b78cec1c" time="1397241744690" ignored="false" />
     <file path="/Wrong.cfg" changelist="0e174e86-1980-4a5b-b895-0468b78cec1c" time="1370632403747" ignored="false" />
     <file path="/Source.java" changelist="0e174e86-1980-4a5b-b895-0468b78cec1c" time="1370911562612" ignored="false" />
     <file path="/Test.java" changelist="0e174e86-1980-4a5b-b895-0468b78cec1c" time="1370814859425" ignored="false" />
@@ -84,7 +84,7 @@
     <file path="/SaveActionListener.java" changelist="0e174e86-1980-4a5b-b895-0468b78cec1c" time="1371693398754" ignored="false" />
     <file path="/SaveAsActionListener.java" changelist="0e174e86-1980-4a5b-b895-0468b78cec1c" time="1395630383465" ignored="false" />
     <file path="/NewActionListener.java" changelist="0e174e86-1980-4a5b-b895-0468b78cec1c" time="1371523122358" ignored="false" />
-    <file path="/a.dummy" changelist="0e174e86-1980-4a5b-b895-0468b78cec1c" time="1395639004924" ignored="false" />
+    <file path="/a.dummy" changelist="0e174e86-1980-4a5b-b895-0468b78cec1c" time="1397249635016" ignored="false" />
     <file path="/EndActionListener.java" changelist="0e174e86-1980-4a5b-b895-0468b78cec1c" time="1395631402235" ignored="false" />
     <file path="/QuitActionListener.java" changelist="0e174e86-1980-4a5b-b895-0468b78cec1c" time="1371694383666" ignored="false" />
     <file path="/SetConfigActionListener.java" changelist="0e174e86-1980-4a5b-b895-0468b78cec1c" time="1371599313454" ignored="false" />
@@ -100,18 +100,17 @@
     <file path="/ExchangeActionListener.java" changelist="0e174e86-1980-4a5b-b895-0468b78cec1c" time="1371602095086" ignored="false" />
     <file path="/ClearBoardActionListener.java" changelist="0e174e86-1980-4a5b-b895-0468b78cec1c" time="1395631335043" ignored="false" />
     <file path="/BestMoveActionListener.java" changelist="0e174e86-1980-4a5b-b895-0468b78cec1c" time="1371602323447" ignored="false" />
-    <file path="/PlayMoveActionListener.java" changelist="0e174e86-1980-4a5b-b895-0468b78cec1c" time="1395634112667" ignored="false" />
+    <file path="/PlayMoveActionListener.java" changelist="0e174e86-1980-4a5b-b895-0468b78cec1c" time="1397248423281" ignored="false" />
     <file path="/BoardFilter.java" changelist="0e174e86-1980-4a5b-b895-0468b78cec1c" time="1395631243244" ignored="false" />
     <file path="/HandFilter.java" changelist="0e174e86-1980-4a5b-b895-0468b78cec1c" time="1371602916587" ignored="false" />
     <file path="/HelpActionListener.java" changelist="0e174e86-1980-4a5b-b895-0468b78cec1c" time="1371603098866" ignored="false" />
     <file path="/BoardMouseListener.java" changelist="0e174e86-1980-4a5b-b895-0468b78cec1c" time="1371694840018" ignored="false" />
     <file path="/HandMouseListener.java" changelist="0e174e86-1980-4a5b-b895-0468b78cec1c" time="1371614178397" ignored="false" />
     <file path="/LetterChooser.java" changelist="0e174e86-1980-4a5b-b895-0468b78cec1c" time="1371610743385" ignored="false" />
-    <file path="/Dummy.txt" changelist="0e174e86-1980-4a5b-b895-0468b78cec1c" time="1395628179023" ignored="false" />
-    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="0e174e86-1980-4a5b-b895-0468b78cec1c" time="1371695188949" ignored="false" />
+    <file path="/Dummy.txt" changelist="0e174e86-1980-4a5b-b895-0468b78cec1c" time="1397248850887" ignored="false" />
     <file path="/*.regexp" changelist="0e174e86-1980-4a5b-b895-0468b78cec1c" time="1376051786796" ignored="false" />
     <file path="/usr/lib/jvm/java-7-oracle/src.zip!/javax/swing/JButton.java" changelist="0e174e86-1980-4a5b-b895-0468b78cec1c" time="1385600379669" ignored="false" />
-    <file path="/Logger.java" changelist="0e174e86-1980-4a5b-b895-0468b78cec1c" time="1395634544660" ignored="false" />
+    <file path="/Logger.java" changelist="0e174e86-1980-4a5b-b895-0468b78cec1c" time="1397249531017" ignored="false" />
     <file path="/ClearLogFilesActionListener.java" changelist="0e174e86-1980-4a5b-b895-0468b78cec1c" time="1395639070990" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -127,6 +126,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -163,7 +163,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -173,10 +172,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="GameMediator.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="GameMediator.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Game/GameMediator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="184" column="0" selection-start="6792" selection-end="6792" vertical-scroll-proportion="0.0">
+            <state line="26" column="16" selection-start="562" selection-end="562" vertical-scroll-proportion="0.29776675">
               <folding />
             </state>
           </provider>
@@ -185,10 +184,8 @@
       <file leaf-file-name="Logger.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Util/Logger.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="0" selection-start="1121" selection-end="1121" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="25" column="42" selection-start="598" selection-end="598" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -196,19 +193,44 @@
       <file leaf-file-name="MainFrame.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GUI/MainFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="199" column="49" selection-start="9027" selection-end="9027" vertical-scroll-proportion="0.0">
+            <state line="594" column="5" selection-start="24516" selection-end="24516" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClearLogFilesActionListener.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="PlayMoveActionListener.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GUI/PlayMoveActionListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="132" column="21" selection-start="6468" selection-end="6468" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Game/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="13" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClearLogFilesActionListener.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GUI/ClearLogFilesActionListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="81" selection-start="714" selection-end="714" vertical-scroll-proportion="0.7349666">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="29" column="0" selection-start="778" selection-end="778" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Scrabble.cfg" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Configurations/Scrabble.cfg">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="93" column="1" selection-start="642" selection-end="642" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -217,15 +239,6 @@
         <entry file="file://$PROJECT_DIR$/src/GUI/QuitActionListener.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="22" column="12" selection-start="498" selection-end="564" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OpenActionListener.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GUI/OpenActionListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="91" column="0" selection-start="4231" selection-end="4231" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -267,7 +280,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/GUI/ExchangeWindow.java" />
         <option value="$PROJECT_DIR$/src/GUI/MoveChooser.java" />
         <option value="$PROJECT_DIR$/src/Player/Player.java" />
         <option value="$PROJECT_DIR$/src/GUI/SaveAsActionListener.java" />
@@ -275,14 +287,15 @@
         <option value="$PROJECT_DIR$/src/GUI/BoardFilter.java" />
         <option value="$PROJECT_DIR$/src/GUI/ClearBoardActionListener.java" />
         <option value="$PROJECT_DIR$/src/GUI/EndActionListener.java" />
-        <option value="$PROJECT_DIR$/src/GUI/PlayMoveActionListener.java" />
-        <option value="$PROJECT_DIR$/src/Util/Logger.java" />
         <option value="$PROJECT_DIR$/src/GUI/GamePlay.java" />
         <option value="$PROJECT_DIR$/src/GUI/OpenActionListener.java" />
-        <option value="$PROJECT_DIR$/src/Game/GameMediator.java" />
-        <option value="$PROJECT_DIR$/src/GUI/MainFrame.java" />
         <option value="$PROJECT_DIR$/src/GUI/ClearLogFilesActionListener.java" />
         <option value="$PROJECT_DIR$/src/Logs/db" />
+        <option value="$PROJECT_DIR$/src/Configurations/Scrabble.cfg" />
+        <option value="$PROJECT_DIR$/src/GUI/MainFrame.java" />
+        <option value="$PROJECT_DIR$/src/GUI/PlayMoveActionListener.java" />
+        <option value="$PROJECT_DIR$/src/Game/GameMediator.java" />
+        <option value="$PROJECT_DIR$/src/Util/Logger.java" />
       </list>
     </option>
   </component>
@@ -319,7 +332,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -374,24 +386,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Saves" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Scrabble 2.0" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Scrabble 2.0" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="Player" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -411,24 +405,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="META-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Scrabble 2.0" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Scrabble 2.0" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Logs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -506,6 +482,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -530,6 +507,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Icons" />
       <recent name="$PROJECT_DIR$/src/Saves" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
@@ -755,7 +733,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.312" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1616" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -766,8 +744,8 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24940991" sideWeight="0.8032" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22187254" sideWeight="0.7936" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2064" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18646735" sideWeight="0.72" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
@@ -845,31 +823,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/GUI/PlayMoveActionListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="109" selection-start="2682" selection-end="2682" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#1402#1411#0" expanded="true" />
-            <element signature="e#2371#2380#0" expanded="true" />
-            <element signature="e#3559#3568#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/SaveAsActionListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="24" selection-start="1434" selection-end="1434" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Util/Source.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="17" selection-start="269" selection-end="269" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Player/DecentComputer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="13" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0">
@@ -884,46 +837,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="13" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Util/Logger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="0" selection-start="1121" selection-end="1121" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/NewActionListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="30" selection-start="980" selection-end="980" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/GUI/OpenActionListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="91" column="0" selection-start="4231" selection-end="4231" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/GameMediator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="184" column="0" selection-start="6792" selection-end="6792" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/MainFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="199" column="49" selection-start="9027" selection-end="9027" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -935,6 +851,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/ClearLogFilesActionListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="0" selection-start="778" selection-end="778" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/NewActionListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="30" selection-start="980" selection-end="980" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/GUI/QuitActionListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="12" selection-start="498" selection-end="564" vertical-scroll-proportion="0.0">
@@ -942,26 +872,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Saves/db">
+    <entry file="file://$PROJECT_DIR$/src/Configurations/Scrabble.cfg">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="31" selection-start="0" selection-end="2311" vertical-scroll-proportion="0.0">
+        <state line="93" column="1" selection-start="642" selection-end="642" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Logs/db">
+    <entry file="file://$PROJECT_DIR$/src/Icons/dictionary.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/PlayMoveActionListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="50" selection-start="2311" selection-end="2311" vertical-scroll-proportion="0.75688076">
+        <state line="132" column="21" selection-start="6468" selection-end="6468" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/ClearLogFilesActionListener.java">
+    <entry file="file://$PROJECT_DIR$/src/Game/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="81" selection-start="714" selection-end="714" vertical-scroll-proportion="0.7349666">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="11" column="13" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Util/Logger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="42" selection-start="598" selection-end="598" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/MainFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="594" column="5" selection-start="24516" selection-end="24516" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game/GameMediator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="16" selection-start="562" selection-end="562" vertical-scroll-proportion="0.29776675">
+          <folding />
         </state>
       </provider>
     </entry>

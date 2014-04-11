@@ -684,7 +684,7 @@ public class MainFrame extends JFrame implements Observer, Source {
     protected void setMoveChoice(PlayerMove move){moveChoice = move;}
 
     protected String getBoardString() {
-        String result = "\nOfficial Board: ";
+        String result = "\nOfficial Board: \n";
         for (int i=0; i<board.getDimension(); i++) {
             for (int j=0; j< board.getDimension(); j++) {
                 result += board.get(i, j);
@@ -692,10 +692,12 @@ public class MainFrame extends JFrame implements Observer, Source {
             result += "\n";
         }
 
-        result += "\n Virtual Board: ";
+        result += "\nVirtual Board: \n";
         for (int i=0; i<board.getDimension(); i++) {
             for (int j=0; j< board.getDimension(); j++) {
-                result += virtualBoard.get((i*board.getDimension())+j);
+                String toAdd = virtualBoard.get((i*board.getDimension())+j).getText();
+                if (toAdd.length() == 1) result += toAdd;
+                else result += "_";
             }
             result += "\n";
         }

@@ -128,21 +128,21 @@ public class PlayMoveActionListener implements ActionListener {
             }
         }
 
-        start = null;
         Coordinate spot = (Coordinate) coordinates.toArray()[0];
         String text = parent.virtualBoard.get((spot.getRow()*parent.board.getDimension())+spot.getColumn()).getText();
+        start = spot;
         if (horizontal){
             while (text.length() == 1 && spot.getColumn() != 0){
-                start = spot;
                 spot = new Coordinate(spot.getRow(), spot.getColumn()-1);
                 text = parent.virtualBoard.get((spot.getRow()*parent.board.getDimension())+spot.getColumn()).getText();
+                if (text.length() == 1) start = spot;
             }
         }
         else{
             while (text.length() == 1 && spot.getRow() != 0){
-                start = spot;
                 spot = new Coordinate(spot.getRow()-1, spot.getColumn());
                 text = parent.virtualBoard.get((spot.getRow()*parent.board.getDimension())+spot.getColumn()).getText();
+                if (text.length() == 1) start = spot;
             }
         }
 

@@ -1,9 +1,6 @@
 package Util;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.PrintWriter;
-import java.io.UnsupportedEncodingException;
+import java.io.*;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -26,11 +23,15 @@ public class Logger {
      */
     public static void setLogger(String outputFile) {
         try {
-            new File(outputFile);
+            File f = new File(outputFile);
+            f.getParentFile().mkdirs();
+            f.createNewFile();
             writer = new PrintWriter(outputFile, "UTF-8");
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
